@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+        <random>
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Hi! Nice to meet you</li>
+            <li>Hi! How can I help you?</li>
+            <li>Greetings :) </li>
+            <li>Hey! What's up?</li>
+            <li>Hello... Nice to meet you</li>
+            <li>Hello! How may I assist you today?</li>
+            <li>Can you tell me your name by saying "My name is "</li>
+        </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI *</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO *</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>My name is unilorinbot</template>
+    </category>
+    
+    <category>
+        <pattern>* YOUR NAME</pattern>
+        <template>
+            <srai>WHAT IS YOUR NAME</srai>
+        </template>
+    </category>
+</aiml>
