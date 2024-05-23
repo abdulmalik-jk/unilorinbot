@@ -1,52 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    <!--categories for greeting the bot-->
     <category>
         <pattern>HELLO</pattern>
         <template>
-        <random>
-            <li>Hi</li>
-            <li>Hello</li>
-            <li>Hi! Nice to meet you</li>
-            <li>Hi! How can I help you?</li>
-            <li>Greetings :) </li>
-            <li>Hey! What's up?</li>
-            <li>Hello... Nice to meet you</li>
-            <li>Hello! How may I assist you today?</li>
-            <li>Can you tell me your name by saying "My name is "</li>
-        </random>
+            <random>
+                <li>Hi</li>
+                <li>Hello</li>
+                <li>Hi! Nice to meet you</li>
+                <li>Hi! How can I help you?</li>
+                <li>Greetings :) </li>
+                <li>Hey! What's up?</li>
+                <li>Hello... Nice to meet you</li>
+                <li>Hello! How may I assist you today?</li>
+                <li>Can you tell me your name by saying "My name is "</li>
+            </random>
         </template>
     </category>
     
     <category>
-        <pattern>HI</pattern>
+        <pattern># HI #</pattern>
         <template>
             <srai>HELLO</srai>
         </template>
     </category>
 
     <category>
-        <pattern>HI *</pattern>
-        <template>
-            <srai>HELLO</srai>
-        </template>
-    </category>
-
-    <category>
-        <pattern>HELLO *</pattern>
+        <pattern># HELLO #</pattern>
         <template>
             <srai>HELLO</srai>
         </template>
     </category>
     
+    <category>
+        <pattern># GOOD MORNING #</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># GOOD AFTERNOON #</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># GOOD EVENING #</pattern>
+        <template>
+            <srai>HELLO</srai>
+        </template>
+    </category>
+    
+    <!--categories for asking for the bot's name-->
     <category>
         <pattern>WHAT IS YOUR NAME</pattern>
         <template>My name is unilorinbot</template>
     </category>
     
     <category>
-        <pattern>* YOUR NAME</pattern>
+        <pattern># YOUR NAME #</pattern>
         <template>
             <srai>WHAT IS YOUR NAME</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># WHO ARE YOU #</pattern>
+        <template>
+            <srai>WHAT IS YOUR NAME</srai>
+        </template>
+    </category>
+    
+    <!--categories to collect username-->
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            Hello, <set name = "username"> <star/></set>!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I AM *</pattern>
+        <template>
+            Hello, <set name = "username"> <star/></set>!
+        </template>
+    </category>
+    
+    <!--categories for saying bye to the bot-->
+    <category>
+        <pattern>BYE</pattern>
+        <template>
+            <random>
+                <li>Goodbye!</li>
+                <li>It was nice talking to you</li>
+                <li>I hope I was able to assist you</li>
+                <li>Cheers</li>
+                <li>I hope that you had a great time.</li>
+                <li>Take care</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># GOODBYE #</pattern>
+        <template>
+            <srai>BYE</srai>
+        </template>
+    </category>
+    `
+    <category>
+        <pattern># GOODNIGHT #</pattern>
+        <template>
+            <srai>BYE</srai>
+        </template>
+    </category>
+    
+    <!--category for unilorin portal link-->
+    <category>
+        <pattern># UNILORIN PORTAL #</pattern>
+        <template>
+            <button>
+                <text>Unilorin Portal</text>
+                <url>https://portal.unilorin.edu.ng</url>
+            </button>
+        </template>
+    </category>
+    
+    <!--category for preadmission-->
+    <category>
+        <pattern># POST UTME #</pattern>
+        <template>
+            <button>
+                <text>Undergraduate Preadmission Portal</text>
+                <url>https://portal.unilorin.edu.ng/ug/candidate</url>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># PRE ADMISSION #</pattern>
+        <template>
+            <srai># POST UTME #</srai>
+        </template>
+    </category>
+    
+    <!--category for directions to cis faculty-->
+    <category>
+        <pattern>HOW DO I GET TO THE CIS FACULTY</pattern>
+        <template>
+            <button>
+                <text>CIS Faculty</text>
+                <url>https://maps.app.goo.gl/vguHuNTrfroFii3d9</url>
+            </button>
         </template>
     </category>
 </aiml>
