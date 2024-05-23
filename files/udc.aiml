@@ -53,6 +53,25 @@
         </template>
     </category>
     
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>I'am doing good. What about you?</li>
+                <li>I'am fine. What about you?</li>
+                <li>I'm fine. What about you?</li>
+                <li>I'm okay. What about you?</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HOW ARE YOU DOING *</pattern>
+        <template>
+            <srai>HOW ARE YOU</srai>
+        </template>
+    </category>
+    
     <!--categories for asking for the bot's name-->
     <category>
         <pattern>WHAT IS YOUR NAME</pattern>
@@ -155,5 +174,23 @@
                 <url>https://maps.app.goo.gl/vguHuNTrfroFii3d9</url>
             </button>
         </template>
+    </category>
+    
+    <!--category about examination dates-->
+    <category>
+        <pattern>WHEN WILL EXAMS START</pattern>
+        <template>Rain Semester Examinations for 2022/2023 Session will  commence on Monday 8th July, 2024.</template>
+    </category>
+    
+    <category>
+        <pattern># EXAMS * START #</pattern>
+        <template>
+            <srai>WHEN WILL EXAMS START</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHEN WILL EXAMS END</pattern>
+        <template>Rain Semester Examinations for 2022/2023 Session will  end on Monday 26th July, 2024.</template>
     </category>
 </aiml>
