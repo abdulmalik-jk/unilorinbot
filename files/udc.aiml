@@ -172,18 +172,23 @@
     <!--category about examination dates-->
     <category>
         <pattern>WHEN WILL EXAMS START</pattern>
-        <template>Rain Semester Examinations for 2022/2023 Session will  commence on Monday 8th July, 2024.</template>
+        <template>Rain Semester Examinations for 2022/2023 Session will  commence on 
+        Monday 8th July, 2024 and end on Monday 26th July, 2024</template>
     </category>
     
     <category>
-        <pattern># EXAMS * START #</pattern>
+        <pattern>* EXAMS *</pattern>
         <template>
             <srai>WHEN WILL EXAMS START</srai>
         </template>
     </category>
     
+   <!-- 
     <category>
-        <pattern>WHEN WILL EXAMS END</pattern>
-        <template>Rain Semester Examinations for 2022/2023 Session will  end on Monday 26th July, 2024.</template>
+        <pattern># EXAMS #</pattern>
+        <template>
+            <srai>WHEN WILL EXAMS START</srai>
+        </template>
     </category>
+    -->
 </aiml>
