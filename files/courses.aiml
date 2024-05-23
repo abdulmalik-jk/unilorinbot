@@ -1,4 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-	<!-- insert your AIML categories here -->
+<aiml>
+	<!--categories on courses that can be registered-->
+	<category>
+	    <pattern>WHAT COURSES CAN I REGISTER</pattern>
+	    <template>
+	        You can register the following courses:
+	        <ol>
+	            <li>CSC420	Software Engineering</li>
+	            <li>CSC421	Data Structure and Algorithm II</li>
+	            <li>CSC422	Data Communication and Information Theory</li>
+	            <li>CSC423	Programming Verification and Development</li>
+	            <li>CSC425	Data Mining and Data Warehousing</li>
+	            <li>CSC426	Parallel Computing</li>
+	            <li>CSC427	Computer Networking</li>
+	            <li>CSC429	Human Computer Interaction</li>
+	            <li>CSC431	Seminar</li>
+	            <li>CSC438	Visual Programming</li>
+	            <li>CSC441	Database design and Management II</li>
+	            <li>CSC445	Introduction to Cryptography</li>
+	            <li>CSC446	COMPUTER GRAPHICS</li>
+	            <li>CSC448	ARTIFICIAL INTELLIGENCE</li>
+	            <li>CSC450	Organization of Programming Language</li>
+	            <li>CSC452	Mobile and Cloud Computing</li>
+	            <li>CSC454	Compiler Construction</li>
+	            <li>CSC499	Project</li>
+	            <li>GNS312	Digital Skill Acquisition</li>
+            </ol>
+            Please contact your Level Adviser if you have any carry-over course(s) or have any further inquiries.
+	    </template>
+    </category>
+    
+    <category>
+        <pattern># COURSE REGISTRATION #</pattern>
+        <template>
+            <srai>WHAT COURSES CAN I REGISTER</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HOW CAN I REGISTER</pattern>
+        <template>To register your courses, proceed to the school portal and navigate to 'Course Management,'
+        select the courses you want to register and await approval from your Level Adviser.
+        <button>
+            <text>Unilorin Portal</text>
+            <url>portal.unilorin.edu.ng</url>
+        </button>
+        </template>
+        <template>For further inquires, contact your Level Adviser.</template>
+    </category>
+    
+    <category>
+        <pattern># REGISTER # COURSES #</pattern>
+        <template>
+            <srai>HOW CAN I REGISTER</srai>
+        </template>
+    </category>
 </aiml>
