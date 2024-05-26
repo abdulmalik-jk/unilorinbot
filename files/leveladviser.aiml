@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- category asking about level adviser -->
+	<category>
+	    <pattern>WHO IS MY LEVEL ADVISER</pattern>
+	    <template>
+	        Your Level adviser is Dr. J.B. Awotunde.
+	        You can reach your LA at +2348062644218 or visit room 23 in the CIS 
+	        Faculty buliding.
+	    </template>
+    </category>
+    <category>
+        <pattern># WHERE # MY LEVEL ADVISER #</pattern>
+        <template>
+            You can reach your LA at +2348062644218 or visit room 23 in the CIS 
+	        Faculty buliding.
+	    </template>
+    </category>
+    <category>
+        <pattern># HOW # MY LEVEL ADVISER #</pattern>
+        <template>
+            <srai># WHERE # MY LEVEL ADVISER #</srai>
+            </template>
+    </category>
+</aiml>

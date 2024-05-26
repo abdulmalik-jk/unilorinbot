@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern># PAY # SCHOOL FEES #</pattern>
+	    <template>
+	        Proceed to the school portal, navigate to 'Fees and Receipts'
+	        and follow the istructions.
+	    </template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # SCHOOL FEES #</pattern>
+        <template>
+            <ol>
+                <li>University charges: 48,380</li>
+                <li>Faculty charges: 7,200</li>
+                <li>Minor charges: 1,500</li>
+            </ol>
+            Total: 57, 080
+        </template>
+    </category>
+    <category>
+        <pattern># DEADLINE # PAYMENT # SCHOOL FEES #</pattern>
+        <template>The deadline for school fees payment is Monday 24th March, 2024.</template>
+    </category>
+    
+</aiml>
