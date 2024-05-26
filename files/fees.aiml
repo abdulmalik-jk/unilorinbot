@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+	<!--category on how to pay school fees-->
 	<category>
 	    <pattern># PAY # SCHOOL FEES #</pattern>
 	    <template>
-	        Proceed to the school portal, navigate to 'Fees and Receipts'
-	        and follow the istructions.
+	        To pay your school fees, proceed to the school portal,
+	        navigate to 'Fees and Receipts' and follow the instructions.
 	    </template>
     </category>
+    
+    <!--category on school fees amount-->
     <category>
         <pattern># HOW MUCH # SCHOOL FEES #</pattern>
         <template>
@@ -19,9 +21,10 @@
             Total: 57, 080
         </template>
     </category>
+    
+    <!--category on school fees payment deadline-->
     <category>
         <pattern># DEADLINE # PAYMENT # SCHOOL FEES #</pattern>
         <template>The deadline for school fees payment is Monday 24th March, 2024.</template>
     </category>
-    
 </aiml>
