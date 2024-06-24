@@ -51,7 +51,6 @@
         <template>
             <random>
                 <li>I'am doing good. What about you?</li>
-                <li>I'am fine. What about you?</li>
                 <li>I'm fine. What about you?</li>
                 <li>I'm okay. What about you?</li>
             </random>
@@ -196,4 +195,17 @@
         </template>
     </category>
     -->
+    <category>
+        <pattern>HOW DO I LOGIN</pattern>
+        <template>Procced to the Login page. Enter your Registration Number 
+        (Matric Number or JAMB Registration number for freshers) and Password.
+        Your default password is your surname. Please change your password immediately you login.</template>
+    </category>
+    
+    <category>
+        <pattern>* LOGIN *</pattern>
+        <template>
+            <srai>HOW DO I LOGIN</srai>
+        </template>
+    </category>
 </aiml>

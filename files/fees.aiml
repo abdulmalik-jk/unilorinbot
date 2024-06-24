@@ -27,4 +27,17 @@
         <pattern># DEADLINE # PAYMENT # SCHOOL FEES #</pattern>
         <template>The deadline for school fees payment is Monday 24th March, 2024.</template>
     </category>
+    
+    <category>
+        <pattern>HOW DO I GET PAYMENT RECEIPT</pattern>
+        <template>On the school portal, navigate to 'Fees and Receipts,' navigate to
+        'Receipts and Printouts,' select the academic session and continue.</template>
+    </category>
+    
+    <category>
+        <pattern>* RECEIPT</pattern>
+        <template>
+            <srai>HOW DO I GET PAYMENT RECEIPT</srai>
+        </template>
+    </category>
 </aiml>

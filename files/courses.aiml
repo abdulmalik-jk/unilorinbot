@@ -67,4 +67,17 @@
         <pattern># ADD # DROP #</pattern>
         <template>To add or drop a course, please visit your Level Adviser.</template>
     </category>
+    
+    <category>
+        <pattern>HOW DO I SEE MY RESULTS</pattern>
+        <template>After logging in to the school portal, navigate to 'Results' on the left menu.
+        Your results and GPA will be displayed.</template>
+    </category>
+    
+    <category>
+        <pattern>* RESULTS #</pattern>
+        <template>
+            <srai>HOW DO I SEE MY RESULTS</srai>
+        </template>
+    </category>
 </aiml>
