@@ -59,7 +59,8 @@
     <!--category for registration deadline-->
     <category>
         <pattern># DEADLINE # COURSE # REGISTRATION #</pattern>
-        <template>The deadline for course registration is March 15, 2024.</template>
+        <template>The deadline for course registration is March 15, 2024.
+        Please note that late registration attracts extra charges.</template>
     </category>
     
     <!--category for add and drop-->
